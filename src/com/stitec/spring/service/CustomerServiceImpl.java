@@ -15,13 +15,21 @@ import com.stitec.spring.entity.Customer;
 public class CustomerServiceImpl implements CustomerService {
 	
 	@Autowired
-	private CustomerDAO custmerDAO;
+	private CustomerDAO customerDAO;
 
 	@Override
 	@Transactional
 	public List<Customer> gerCustomers() {
 		
-		return custmerDAO.getCustomers();
+		return customerDAO.getCustomers();
+	}
+
+	@Override
+	@Transactional
+	public void saveCustomer(Customer theCustomer) {
+		
+		customerDAO.saveCustomer(theCustomer);
+		
 	}
 
 }
