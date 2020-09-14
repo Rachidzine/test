@@ -44,6 +44,7 @@ public class TestDbServlet extends HttpServlet {
 			
 			myConn.close();
 			
+			
 		}
 		catch (Exception exc) {
 			exc.printStackTrace();
