@@ -31,4 +31,12 @@ public class CustomerController {
 				
 		return "list-customers";
 	}
+	
+	
+	@GetMapping("/showFormForAdd")
+	public String showFormAdd(Model theModel) {
+		return "customer-form";
+	}
+	
+	
 }
