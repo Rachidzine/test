@@ -7,6 +7,8 @@ import com.stitec.spring.entity.Customer;
 public interface CustomerService {
 	
 	public List<Customer> gerCustomers();
+
+	public void saveCustomer(Customer theCustomer);
 		
 	
 
