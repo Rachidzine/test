@@ -24,8 +24,7 @@ public class CustomerController {
 		
 		theModel.addAttribute("customers", thecustomers);
 		
-		
-		
+				
 		return "list-customers";
 	}
 }

@@ -19,7 +19,7 @@ public class Customer {
 	private int id;
 	
 	@Column(name = "first_name")
-	private String firstname;
+	private String firstName;
 	
 	@Column(name = "last_name" )
 	private String lastName;
@@ -34,8 +34,8 @@ public class Customer {
 	public Customer() {}
 	
 	
-	public Customer(String firstname, String lastName, String email) {
-		this.firstname = firstname;
+	public Customer(String firstName, String lastName, String email) {
+		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 	}
@@ -47,7 +47,7 @@ public class Customer {
 
 	@Override
 	public String toString() {
-		return "Customer [id=" + id + ", firstname=" + firstname + ", lastName=" + lastName + ", email=" + email + "]";
+		return "Customer [id=" + id + ", firstname=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
 	}
 
 
@@ -59,12 +59,12 @@ public class Customer {
 		this.id = id;
 	}
 
-	public String getFirstname() {
-		return firstname;
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setFirstname(String firstName) {
+		this.firstName = firstName;
 	}
 
 	public String getLastName() {
